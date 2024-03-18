@@ -14,5 +14,12 @@ internal class RestaurantsRepository(RestaurantsDbContext dbContext)
 
         return restaurants;
     }
+
+    public async Task<Restaurant?> GetByIdAsync(int id)
+    {
+        var restaurant = dbContext.Restaurants.FirstOrDefault(x => x.Id == id);
+
+        return restaurant;
+    }
 }
 
