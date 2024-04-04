@@ -12,15 +12,15 @@ POST {{Restaurants.API_HostAddress}}/api/restaurants
 Content-Type: application/json
 
 {
-  "Name": "Spicy Delights",
+  "Name": "Spicy Test",
   "Description": "Spicy Delights is a restaurant that serves spicy food.",
-  "Category": "Fine Dining",
+  "Category": "Indian",
   "HasDelivery": true,
   "ContactEmail": "info@gourmetdelights.com",
   "ContactNumber": "123-456-7890",
   "Street": "123 Main St",
   "City": "Anytown",
-  "PostalCode": "12345"
+  "PostalCode": "12-345"
 }
 
 ###
