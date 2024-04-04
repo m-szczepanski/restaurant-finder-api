@@ -8,11 +8,15 @@ GET {{Restaurants.API_HostAddress}}/api/restaurants/1
 
 ###
 
+DELETE {{Restaurants.API_HostAddress}}/api/restaurants/4
+
+###
+
 POST {{Restaurants.API_HostAddress}}/api/restaurants
 Content-Type: application/json
 
 {
-  "Name": "Spicy Test",
+  "Name": "Tasty Test",
   "Description": "Spicy Delights is a restaurant that serves spicy food.",
   "Category": "Indian",
   "HasDelivery": true,
