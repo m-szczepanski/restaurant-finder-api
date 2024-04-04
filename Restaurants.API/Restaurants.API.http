@@ -1,6 +1,26 @@
-@Restaurants.API_HostAddress = http://localhost:5205
+@Restaurants.API_HostAddress = https://localhost:7280
 
-GET {{Restaurants.API_HostAddress}}/api/weatherforecast/example
-Accept: application/json
+GET {{Restaurants.API_HostAddress}}/api/restaurants
+
+###
+
+GET {{Restaurants.API_HostAddress}}/api/restaurants/1
+
+###
+
+POST {{Restaurants.API_HostAddress}}/api/restaurants
+Content-Type: application/json
+
+{
+  "Name": "Spicy Delights",
+  "Description": "Spicy Delights is a restaurant that serves spicy food.",
+  "Category": "Fine Dining",
+  "HasDelivery": true,
+  "ContactEmail": "info@gourmetdelights.com",
+  "ContactNumber": "123-456-7890",
+  "Street": "123 Main St",
+  "City": "Anytown",
+  "PostalCode": "12345"
+}
 
 ###
