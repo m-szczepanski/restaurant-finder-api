@@ -4,7 +4,7 @@ GET {{Restaurants.API_HostAddress}}/api/restaurants
 
 ###
 
-GET {{Restaurants.API_HostAddress}}/api/restaurants/1
+GET {{Restaurants.API_HostAddress}}/api/restaurants/3
 
 ###
 
@@ -25,6 +25,17 @@ Content-Type: application/json
   "Street": "123 Main St",
   "City": "Anytown",
   "PostalCode": "12-345"
+}
+
+###
+
+PATCH {{Restaurants.API_HostAddress}}/api/restaurants/3
+Content-Type: application/json
+
+{
+  "Name": "Tasty Toast",
+  "Description": "Spicy Delights is a restaurant that serves spicy toasts.",
+  "HasDelivery": true
 }
 
 ###
